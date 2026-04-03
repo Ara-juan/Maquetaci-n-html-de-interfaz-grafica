@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Maquetación de la interfaz grafica</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+
+</head>
+<body>
+
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark px-3">
+    <div class="container-fluid">
+      <!-- Sección izquierda de la barra de navegación -->
+      <a class="navbar-brand d-flex align-items-center" href="#">
+        <span class="me-2">👤</span> Iniciar sesión
+      </a>
+
+      
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- Sección central de la barra de navegación -->
+
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav mx-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#">Hombre</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Mujer</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Colecciones</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Buscar productos</a>
+          </li>
+        </ul>
+
+        <!-- Sección derecha de la barra de navegación-->
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#">🔍</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+
+ <!-- Carrusel de productos "Los productos o conjuntos de ropa que apareceran para representar la pagina web"-->
+  <div id="productosCarousel" class="carousel slide mt-4" data-bs-ride="carousel">
+
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="Anime 1 (5).jpg" class="d-block w-100" alt="Producto 1" width="200px" height="700px">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Producto Popular 1</h5>
+          <p>Descripción breve del producto.</p>
+        </div>
+      </div>
+
+      <div class="carousel-item">
+        <img src="Anime 3 (24).jpg" class="d-block w-100" alt="Producto 2" width="200px" height="700px">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Producto Popular 2</h5>
+          <p>Descripción breve del producto.</p>
+        </div>
+      </div>
+
+      <div class="carousel-item">
+        <img src="48.png" class="d-block w-100" alt="Producto 3" width="200px" height="700px">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Producto Popular 3</h5>
+          <p>Descripción breve del producto.</p>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Controles para el carrucel de imagenes -->
+    <button class="carousel-control-prev" type="button" data-bs-target="#productosCarousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#productosCarousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon"></span>
+    </button>
+
+  </div>
+
+ <!-- carrucel de videos de la ropa-->
+  <div id="videoCarousel" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner text-center">
+
+      <div class="carousel-item active">
+        <video src="video de prueba 1.mp4" controls width="300px" height="500px"></video>
+        <div class="carousel-caption">
+          <!--Esos seran los videos donde se mostraran ropas de la marca americanoshh-->
+        </div>
+      </div>
+
+      <div class="carousel-item">
+        <video src="video de prueba 2.mp4" controls width="300px" height="500px"></video>
+        <div class="carousel-caption">
+        </div>
+      </div>
+
+      <div class="carousel-item">
+        <video src="video de prueba 3.mp4" controls width="300px" height="500px"></video> 
+        <div class="carousel-caption">
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Controles del carrucell de videos -->
+    <button class="carousel-control-prev" type="button" data-bs-target="#videoCarousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#videoCarousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon"></span>
+    </button>
+
+  </div>
+
+  <div class="container py-5">
+    <h2 class="text-center mb-4">Catálogo de Productos</h2>
+    <div class="row g-4">
+      
+      <!-- Tarjeta de producto para catalogo-->
+      <div class="col-12 col-sm-6 col-md-3">
+        <div class="card h-100 text-center">
+          <img src="https://via.placeholder.com/150" class="card-img-top" alt="Producto">
+          <div class="card-body">
+            <h5 class="card-title">Nombre del Producto</h5>
+            <p class="card-text text-muted">Descripción breve del producto.</p>
+            <p class="fw-bold">$120.00</p>
+            <a href="#" class="btn btn-dark">Ver más</a>
+          </div>
+        </div>
+      </div>
+      
+      
+      <div class="col-12 col-sm-6 col-md-3">
+        <div class="card h-100 text-center">
+          <img src="https://via.placeholder.com/150" class="card-img-top" alt="Producto">
+          <div class="card-body">
+            <h5 class="card-title">Producto 2</h5>
+            <p class="card-text text-muted">Descripción breve.</p>
+            <p class="fw-bold">$120.00</p>
+            <a href="#" class="btn btn-dark">Ver más</a>
+          </div>
+        </div>
+      </div>
+
+        
+      <div class="col-12 col-sm-6 col-md-3">
+        <div class="card h-100 text-center">
+          <img src="https://via.placeholder.com/150" class="card-img-top" alt="Producto">
+          <div class="card-body">
+            <h5 class="card-title">Producto 2</h5>
+            <p class="card-text text-muted">Descripción breve.</p>
+            <p class="fw-bold">$120.00</p>
+            <a href="#" class="btn btn-dark">Ver más</a>
+          </div>
+        </div>
+      </div>
+
+        
+      <div class="col-12 col-sm-6 col-md-3">
+        <div class="card h-100 text-center">
+          <img src="https://via.placeholder.com/150" class="card-img-top" alt="Producto">
+          <div class="card-body">
+            <h5 class="card-title">Producto 2</h5>
+            <p class="card-text text-muted">Descripción breve.</p>
+            <p class="fw-bold">$120.00</p>
+            <a href="#" class="btn btn-dark">Ver más</a>
+          </div>
+        </div>
+      </div>
+
+       
+      <div class="col-12 col-sm-6 col-md-3">
+        <div class="card h-100 text-center">
+          <img src="https://via.placeholder.com/150" class="card-img-top" alt="Producto">
+          <div class="card-body">
+            <h5 class="card-title">Producto 2</h5>
+            <p class="card-text text-muted">Descripción breve.</p>
+            <p class="fw-bold">$120.00</p>
+            <a href="#" class="btn btn-dark">Ver más</a>
+          </div>
+        </div>
+      </div>
+
+        
+      <div class="col-12 col-sm-6 col-md-3">
+        <div class="card h-100 text-center">
+          <img src="https://via.placeholder.com/150" class="card-img-top" alt="Producto">
+          <div class="card-body">
+            <h5 class="card-title">Producto 2</h5>
+            <p class="card-text text-muted">Descripción breve.</p>
+            <p class="fw-bold">$120.00</p>
+            <a href="#" class="btn btn-dark">Ver más</a>
+          </div>
+        </div>
+      </div>
+
+        
+      <div class="col-12 col-sm-6 col-md-3">
+        <div class="card h-100 text-center">
+          <img src="https://via.placeholder.com/150" class="card-img-top" alt="Producto">
+          <div class="card-body">
+            <h5 class="card-title">Producto 2</h5>
+            <p class="card-text text-muted">Descripción breve.</p>
+            <p class="fw-bold">$120.00</p>
+            <a href="#" class="btn btn-dark">Ver más</a>
+          </div>
+        </div>
+      </div>
+      
+        
+      <div class="col-12 col-sm-6 col-md-3">
+        <div class="card h-100 text-center">
+          <img src="https://via.placeholder.com/150" class="card-img-top" alt="Producto">
+          <div class="card-body">
+            <h5 class="card-title">Producto 2</h5>
+            <p class="card-text text-muted">Descripción breve.</p>
+            <p class="fw-bold">$120.00</p>
+            <a href="#" class="btn btn-dark">Ver más</a>
+          </div>
+        </div>
+      </div>
+
+     
+      
+    </div>
+  </div>
+
+  
+  <!-- Pie de pagina-->
+  <footer class="bg-light text-dark py-4">
+    <div class="container">
+      <!-- Encabezado -->
+      <div class="row text-center mb-3">
+        <div class="col-12">
+          <h2 class="fw-bold">Americanos hh</h2>
+          <div class="d-flex justify-content-center gap-3 mt-2">
+            <a href="#" aria-label="Facebook">
+              <img src="facebook-icon.png" alt="Facebook" width="24">
+            </a>
+            <a href="#" aria-label="Instagram">
+              <img src="instagram-icon.png" alt="Instagram" width="24">
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Columnas -->
+      <div class="row text-center text-md-start">
+
+        <!-- Columna izquierda -->
+        <div class="col-md-4 mb-3">
+          <ul class="list-unstyled">
+            <li><a href="#" class="text-dark text-decoration-none">Sobre nosotros</a></li>
+            <li><a href="#" class="text-dark text-decoration-none">Preguntas frecuentes</a></li>
+            <li><a href="tel:31157868" class="text-dark text-decoration-none">Contáctanos: 31157868</a></li>
+          </ul>
+        </div>
+
+        <!-- Columna central -->
+        <div class="col-md-4 mb-3">
+          <ul class="list-unstyled">
+            <li><a href="#" class="text-dark text-decoration-none">Básicas</a></li>
+            <li><a href="#" class="text-dark text-decoration-none">Estampadas</a></li>
+            <li><a href="#" class="text-dark text-decoration-none">Hoodies</a></li>
+          </ul>
+        </div>
+
+        <!-- Columna derecha -->
+        <div class="col-md-4 mb-3">
+          <ul class="list-unstyled">
+            <li><a href="#" class="text-dark text-decoration-none">Camisas y Polos</a></li>
+            <li><a href="#" class="text-dark text-decoration-none">Populares</a></li>
+            <li><a href="#" class="text-dark text-decoration-none">Colecciones</a></li>
+          </ul>
+        </div>
+
+      </div>
+
+    </div>
+
+  </footer>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,99 @@
+/* Estilos personalizados para la barra de navegación */
+.navbar {
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+}
+
+.navbar-brand {
+  font-weight: bold;
+}
+
+.nav-link {
+  transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+  color: #ccc; /* efecto hover */
+}
+
+/* Estilos para el carrusel de imagenes */
+.carousel-caption h5 {
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+.carousel-caption p {
+  font-size: 1rem;
+}
+
+
+footer {
+  background-color: #e0e0e0; /* gris claro */
+  color: #000; /* texto negro */
+  padding: 40px 20px;
+  font-family: 'Helvetica Neue', sans-serif;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.footer-header h2 {
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.social-icons img {
+  width: 28px;
+  height: 28px;
+}
+
+.footer-columns {
+  display: flex;
+  justify-content: space-around;
+  text-align: left;
+}
+
+.footer-column ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-column li {
+  margin-bottom: 10px;
+}
+
+.footer-column a {
+  text-decoration: none;
+  color: #000;
+  font-size: 0.95rem;
+  transition: color 0.3s;
+}
+
+.footer-column a:hover {
+  color: #555;
+}
+
+/* Responsivo para móviles */
+@media (max-width: 768px) {
+  .footer-columns {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+}
+
+ 
